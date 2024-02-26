@@ -13,7 +13,7 @@ public class ConvertObjectToBytestream
         list.add(new Student(2230002, "Juan Doe", 20));
 
         try(
-                FileOutputStream fos = new FileOutputStream("src/objectstreamsample/students.dat"); // Creates new File
+                FileOutputStream fos = new FileOutputStream("src/students.dat"); // Creates new File
                 ObjectOutputStream ois = new ObjectOutputStream(fos) // Converter to Bytestream
                 )
         {
